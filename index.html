@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.css">
+    <link rel="stylesheet" href="site.css">
+    <title>IIM - portes ouvertes</title>
+</head>
+
+<body>
+
+    <div class="swiper mon-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide-logo">
+                <p class="subtitle">Journées portes ouvertes - présentation</p>
+                <p class="title">Renseignez vous sur l'Institut de l'Internet et du Multimédia</p>
+            </div>
+            <div class="swiper-slide slide-ldv">
+                <p class="subtitle">Journées portes ouvertes - présentation</p>
+                <p class="title">Inscrivez vous pour les JPO du pôle universitaire Léonard De Vinci</p>
+            </div>
+            <div class="swiper-slide slide-iim">
+                <p class="subtitle">Journées portes ouvertes - présentation</p>
+                <p class="title">Découvrez tous les meilleurs projets de nos étudiants</p>
+            </div>
+        </div>
+
+        <div class="swiper-button-next">suivant</div>
+        <div class="swiper-button-prev">précédent</div>
+        <div class="swiper-pagination">...</div>
+    </div>
+
+    <main class="portfolio">
+
+        <div class="filters tab">
+            <ul>
+                <li class="tablinks" onclick="opentab(event, 'none')" data-filter="all">Tous les axes</li>
+                <li class="tablinks" onclick="opentab(event, 'jv')" data-filter="jv">Jeu vidéo</li>
+                <li class="tablinks" onclick="opentab(event, 'cd')" data-filter="cd">Créa design</li>
+                <li class="tablinks" onclick="opentab(event, 'dw')" data-filter="dw">Développement web</li>
+                <li class="tablinks" onclick="opentab(event, 'cdeb')" data-filter="cdeb">Marketing digital</li>
+                <li class="tablinks" onclick="opentab(event, '3d')" data-filter="3d">Animation 3D</li>
+            </ul>
+        </div>
+
+        <div class="portfolio-elements">
+
+            <div class="card filtr-item" data-category="jv">
+                <div class="card-header">
+                    <p class="card-title">Jeu vidéo</p>
+                </div>
+                <a href="img/jeu-vidéo.jpg">
+                    <img src="img/jeu-vidéo.jpg" alt="motion">
+                </a>
+            </div>
+            <div class="card filtr-item" data-category="cd">
+                <div class="card-header">
+                    <p class="card-title">Créa design</p>
+                </div>
+                <a href="img/créa-design.jpg">
+                    <img src="img/créa-design.jpg" alt="motion">
+                </a>
+            </div>
+            <div class="card filtr-item" data-category="dw">
+                <div class="card-header">
+                    <p class="card-title">Développement web</p>
+                </div>
+                <a href="img/web-programming.jpg">
+                    <img src="img/web-programming.jpg" alt="motion">
+                </a>
+            </div>
+            <div class="card filtr-item" data-category="cdeb">
+                <div class="card-header">
+                    <p class="card-title">Marketing digital</p>
+                </div>
+                <a href="img/marketing.jpg">
+                    <img src="img/marketing.jpg" alt="motion">
+                </a>
+            </div>
+            <div class="card filtr-item" data-category="3d">
+                <div class="card-header">
+                    <p class="card-title">Animation 3D</p>
+                </div>
+                <a href="img/3d.jpeg">
+                    <img src="img/3d.jpeg" alt="motion">
+                </a>
+            </div>
+
+
+        </div>
+        
+        <div id="jv" class="tabcontent">
+            <h3>Axe jeu vidéo :</h3>
+            <p>Bienvenue dans l’univers ludique ! Le secteur du jeu vidéo est un secteur en plein essor, avec une croissance et un chiffre d’affaires supérieurs à celui du cinéma. Avec l’apparition de nouveaux médias et supports (réseaux sociaux, tablettes, Smartphones), de nouveaux moyens de diffusion (PS network, XboxLive, TV interactive, Cloud gaming…) et le développement de nouveaux modèles économiques (free-to-play, micro-paiements…) le monde du jeu vidéo évolue constamment.</p>
+        </div>
+        
+        <div id="cd" class="tabcontent">
+            <h3>Axe créa design :</h3>
+            <p>Le digital transforme la façon dont les marques communiquent en même temps qu’il crée de nouveaux supports et moyens d’interagir tels que les interfaces sans contact, les objets connectés, la réalité augmentée ou virtuelle. Avec l’évolution des codes visuels, l’irruption de nouveaux usages et de nouveaux médias, il s’agit de réinventer en permanence les moyens de séduire et toucher les usagers, clients ou joueurs pour leur faire vivre une expérience.</p>
+        </div>
+        
+        <div id="dw" class="tabcontent">
+            <h3>Axe développement web :</h3>
+            <p>La transformation digitale et les changements qu’elle implique sur les consommateurs et les professionnels sont si nombreux que les entreprises doivent adapter leurs systèmes d’information pour les ouvrir aux plateformes web et mobiles et intégrer les dernières évolutions telles que le cloud, les objets connectés, le big data, l’intelligence artificielle ou le machine learning.</p>
+        </div>
+
+        <div id="cdeb" class="tabcontent">
+            <h3>Axe marketing digital :</h3>
+            <p>Nouvelles attentes des consommateurs, réseaux sociaux, explosion de la vente en ligne, apparition de nouveaux services et de nouveaux usages… En moins de 20 ans, Internet a révolutionné l’économie mondiale et notre manière de consommer. Tous les secteurs professionnels doivent intégrer cette nouvelle donne et communiquer différemment. Ils font désormais appel à des profils hybrides alliant business et technologies.</p>
+        </div>
+
+        <div id="3d" class="tabcontent">
+            <h3>Axe animation 3D :</h3>
+            <p>Les entreprises du secteur de l’image de synthèse 3D produisent des images de plus en plus étonnantes dans des secteurs d’activités qui ne cessent de s’étendre grâce aux nombreuses innovations techniques. Le secteur comprend les long-métrages d’animation ou d’effets spéciaux, les publicités, les séries d’animation, les jeux vidéos, les parcs d’attraction et les projets en réalité virtuelle ou augmentée.</p>
+        </div>
+
+    </main>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="site.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/vanilla.filterizr.min.js"></script>
+    <script>
+        const lightbox = new SimpleLightbox(".card a");
+
+
+        const options = { gutterPixels: 50, };
+        // Initialisation
+        const filterizr = new Filterizr(".portfolio-elements", options);
+
+        let filtersList = document.querySelectorAll(".filters .li")
+        filtersList.forEach(function (filterItem) {
+            filterItem.addEventListener('click', function () {
+                document.querySelector('.filters.active').classList.remove('active')
+                this.classList.add('active');
+            })
+        })
+    </script>
+
+    <footer>
+        <h1>Formulaire d'inscription pour les JPO</h1>
+    
+        <div class="message-error">
+            <ul></ul>
+        </div>
+        <div class="message-success">
+            Formulaire envoyé !
+        </div>
+    
+        <form action="" method="post">
+    
+            <div>
+                <label for="prénom" class="case">Prénom</label>
+                <input type="text" name="prénom" id="prénom">
+            </div>
+            <div>
+                <label for="nom" class="case">Nom</label>
+                <input type="text" name="nom" id="nom">
+            </div>
+            <div>
+                <label for="email" class="case">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="classe" class="case">Classe actuelle</label>
+                <select name="classe" id="">
+                    <option value="bac">Post bac</option>
+                    <option value="tle">Terminale</option>
+                    <option value="prem">Première</option>
+                    <option value="sec">Seconde</option>
+                    <option value="cg">Collège</option>
+                </select> <br>
+            </div>
+            <div>
+                <label for="axe" class="case">Axe préféré</label>
+                <select name="axe" id="">
+                    <option value="aucun">-</option>
+                    <option value="jv">Jeu vidéo</option>
+                    <option value="cd">Créa design</option>
+                    <option value="dw">Développement web</option>
+                    <option value="cdeb">Marketing digital</option>
+                    <option value="3d">Animation 3D</option>
+                </select> <br>
+            </div>
+            
+            <button type="submit">S'inscrire</button>
+        </form>
+
+        <button onclick="darkmode()">Modifier le mode</button>
+        
+    </footer>
+    <script src="formulaire.js"></script>
+
+</body>
+</html>
